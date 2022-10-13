@@ -7,8 +7,9 @@
 # - once a valid number is received, return that number 
 
 def validate_user_input():
-    user_num = input('Please enter an integer')
+    
     while True:
+        user_num = input('Please enter an integer')
         try:
             return(int(user_num))
         except ValueError:
